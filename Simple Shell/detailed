@@ -1,0 +1,13 @@
+A little bit about how this project has been done:
+- By using the function strtok(), the command gets seperated into many tokens and set in
+the args[] array.
+- Here I also declare sp_arg variable to store a special symbol, which is <, >, or |. Along
+with sp_arg, there is also remaining variable that is used to store what goes after the special
+symbol.
+- The count variable is declared for, of course, counting and after that will be used to
+specify available cases.
+- The cpy_cmd variable is used to duplicate the command from stdin, it copies the original
+command right after users input. Because the command, after getting parsed by strtok(), will
+not be the same, so it is necessary to use this variable for history_buffer after that.
+- The shell can also indicate that the input is invalid, and skip to next input if there is an
+Enter key too.
